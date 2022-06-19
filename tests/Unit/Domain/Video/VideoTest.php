@@ -11,6 +11,6 @@ class VideoTest extends TestCase
     {
         $video = new Video();
         $video->publish();
-        self::assertSame(Video::PUBLIC, $video->getVisibility());
+        self::assertTrue($video->isPublic());
     }
 }
